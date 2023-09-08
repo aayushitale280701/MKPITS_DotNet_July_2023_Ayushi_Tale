@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            .container{
+                position: relative;
+            }
+            .black-box{
+                position: relative;
+                border: 2px solid red;
+                height: 100px;
+                margin: 30px;
+            }
+            .gray-box{
+                position:absolute;
+                background: blueviolet;
+                height: 60px;
+                width: 70% ;
+                left: 50px;
+                top: 50px;
+            }
+            .green-box{
+                position: absolute;
+                background: rgb(93, 212, 131);
+                width: 70%;
+                left: 270px;
+                top: -15px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>overlapping example</h1>
+        <p>an element with greater stack order is always above an element with a lower stack order</p>
+        <div class="container">
+            <div class="black-box">Black-box</div>
+            <div class="gray-box">Gray-box</div>
+            <div class="green-box">Green-box</div>
+        </div>
+    </body>
+</html>
