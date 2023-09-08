@@ -1,0 +1,39 @@
+<html>
+<head>
+<style> 
+div {
+    border: 15px solid transparent;
+    width: 250px;
+    padding: 10px 20px;
+}
+
+#round { 
+  
+    border-image: url(opiimg.jpg) 30 30 round;
+}
+
+#stretch {
+  
+    border-image: url(opiimg.jpg) 30 30 stretch;
+}
+</style>
+</head>
+<body>
+
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+<p>The border-image property specifies an image to be used as a border.The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.
+
+    The property has three parts:
+    The image to use as the border
+    Where to slice the image
+    Define whether the middle sections should be repeated or stretched</p>
+
+<div id="round">Here, the image is tiled (repeated) to fill the area.</div>
+<br>
+<div id="stretch">Here, the image is stretched to fill the area.</div>
+
+<p>Here is the image that is used:</p>
+<img src="opiimg.jpg">
+
+</body>
+</html>
