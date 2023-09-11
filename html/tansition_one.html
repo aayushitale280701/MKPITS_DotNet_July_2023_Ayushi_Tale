@@ -1,0 +1,38 @@
+<html>
+    <title>
+        image transition
+    </title>
+    <style>
+        div.div1
+        {
+            width: 20px;
+            height: 20px;
+            margin: 20px auto;
+        }
+        div.div1 div.ayu img
+        {
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            color: darkmagenta;
+            border-radius: 30px;
+            transition: 5s;
+            transition-duration: 5s;
+
+        }
+        div.div1:hover div.ayu img
+        {
+            width: 260px;
+            height: 240px;
+            transform: rotate(-360 deg);
+        }
+    </style>
+    <body>
+        <p>Hover on object to see it in action</p>
+        <div class="div1">
+            <div class="ayu">
+                <img src="nature.png" width="20px" height="20px"/>
+            </div>
+        </div>
+    </body>
+</html>
