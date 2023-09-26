@@ -1,0 +1,19 @@
+<!--function returning a value-->
+<html>
+    <head>
+        <script lang="javascript">
+            function square()
+            {
+                var num=prompt("Enter Number");
+                var square=num*num;
+                return square;
+            }
+            function display()
+            {
+                var result=square();
+                alert("square is"+result);
+            }
+        </script>
+    </head>
+    <input type=button value="call function" onclick="display();"/>
+</html>
