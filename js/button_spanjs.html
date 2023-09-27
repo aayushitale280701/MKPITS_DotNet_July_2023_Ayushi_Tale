@@ -1,0 +1,20 @@
+<!--display the result of above program below button in span-->
+<html>
+    <script lang="javascript">
+        function square()
+        {
+            var num=document.f1.t1.value;
+            var sq=num*num;
+
+            
+            document.getElementById("result").innerHTML="square="+sq;
+        }
+    </script>
+    <form name="f1">
+        Enter Number:<input type="text" name="t1"/><br><br>
+        <input type="button" value="ok" onclick="square();"/>
+        <br> <br>
+        <span id="result">Result</span>
+
+    </form>
+</html>

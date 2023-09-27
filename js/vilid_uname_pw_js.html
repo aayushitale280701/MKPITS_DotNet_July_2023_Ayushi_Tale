@@ -1,0 +1,25 @@
+<!--wap to accept age from the user and display whether he is eligable to vote or not.-->
+<html>
+    <form name="f1">
+        Enter Login Details:<br><br>
+        Username:<input type=text id="t1"/><br><br>
+        Password:<input type=text id="t2"/><br><br>
+        <button type=button onclick="check();">Ok</button><br><br>
+        <span id="result">Result</span>
+    </form>
+    <script lang="javascript">
+        function check()
+        {
+            var u=document.getElementById("t1").value;
+            var p=document.getElementById("t2").value;
+            if(u=="admin" && p=="admin")
+            {
+                document.getElementById("result").innerHTML="Login Successfull";
+            }
+            else
+            {
+                document.getElementById("result").innerHTML="Invalid Credentials !";
+            }
+        }
+    </script>
+</html>

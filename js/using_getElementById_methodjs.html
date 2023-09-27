@@ -1,0 +1,17 @@
+<!--accepting value from textbox using getElementById method-->
+<html>
+    <script lang="javascript">
+        function square()
+        {
+            var num=document.getElementById("t1").value;
+            var sq=num*num;
+            document.getElementById("result").innerHTML="square="+sq;
+        }
+    </script>
+    <form name="f1">
+        Enter Number:<input type=text id="t1" name="t1"/><br><br>
+        <input type=button value="ok" onclick="square();"/>
+        <br> <br>
+        <span id="result">Result</span>
+    </form>
+</html>

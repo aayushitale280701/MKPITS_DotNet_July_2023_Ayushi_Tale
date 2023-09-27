@@ -1,0 +1,30 @@
+<!--wap to accept radius and print area and circ of circle-->
+<html>
+
+
+    <script lang="javascript">
+        function area_circum()
+        {     
+        var rad=parseFloat(document.getElementById("redius").value);
+        var area=3.14*rad*rad;
+        document.getElementById("result").innerHTML="Area of Circle:"+area;
+        var circum=2*3.14*rad;
+        document.getElementById("result").innerHTML="Circumference of Circle:"+circum;
+        }
+    </script>
+
+
+    <form name="f1">
+        Enter Redius: <input type="text" id="redius"/><br><br>
+        Enter Circumference:<input type="text" id="circum"/><br><br>
+
+        <input type="button" value="calculate" onclick="area_circum();"/><br><br>
+        <span id="result">Show Result Area</span>
+
+        
+        <span id="result"></span><br><br>
+        <span id="result"></span>
+    </form>
+
+   
+</html>

@@ -1,0 +1,25 @@
+
+<!--wap to accept length and breadth and height and print volume-->
+<html>
+    <form name="f1">
+        Enter Length:<input type="text" id="length"/><br><br>
+        Enter Breadth:<input type="text" id="breadth"/><br><br>
+        Enter Height:<input type="text" id="height"/><br><br>
+
+        <input type="button" value="calculate" onclick="volume();"/>
+        <span id="result">Result of volume</span>
+    </form>
+    <script lang="javascript">
+        function volume()
+        {     
+        var length=parseFloat(document.getElementById("length").value);
+        var breadth=parseFloat(document.getElementById("breadth").value);
+        var height=parseFloat(document.getElementById("height").value);
+
+        var volume= length*breadth*height
+        document.getElementById("result").innerHTML="volume="+volume;
+        }
+    </script>
+</html>
+
+

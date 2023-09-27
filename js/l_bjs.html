@@ -1,0 +1,18 @@
+<!--wap to accept length and breadth and display result-->
+<html>
+    <form name="f1">
+        Enter Length:<input type="text" id="length"/><br><br>
+        Enter Breadth:<input type="text" id="breadth"/><br><br>
+        <input type="button" value="calculate" onclick="rectangle();"/>
+        <span id="result">Result</span>
+    </form>
+    <script lang="javascript">
+        function rectangle()
+        {     
+        var l=parseFloat(document.getElementById("length").value);
+        var b=parseFloat(document.getElementById("breadth").value);
+        var area=l*b;
+        document.getElementById("result").innerHTML="rectangle="+area;
+        }
+    </script>
+</html>
