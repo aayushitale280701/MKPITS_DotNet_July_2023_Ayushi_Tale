@@ -1,0 +1,162 @@
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <div class="jumbotron text-center">
+        <h2>Registraion Form</h2>
+    </div>
+    <div class="container">
+	    <form>
+	        <div class="form-group">
+		       <label for="firstname">Firstname</label>              
+		       <input class="form-control" type="text" id="firstname" placeholder="Enter First Name"   name="firstname" />
+	        </div>
+	        <div class="form-group">
+		        <label for="lastname">Lastname</label>
+		        <input class="form-control" type="text" id="lastname" placeholder="Enter Last Name " name="lastname" />
+	        </div>
+            <div class="form-group">
+		        <label for="birthdate">Birth Date</label>
+		        <input class="form-control" type="text" id="birthdate" placeholder="Enter Date Of Birth " name="birthdate" />
+	        </div>
+            <div class="form-group">
+		        <label for="email">E-mail</label>
+		        <input class="form-control" type="text" id="email" placeholder="Enter E-mail " name="email" />
+	        </div>
+            <div class="form-group">
+		        <label for="phone">Phone No</label>
+		        <input class="form-control" type="text" id="phoneno" placeholder="Enter Phone No" name="phoneno" />
+	        </div><div class="form-group">
+		        <label for="company">Company</label>
+		        <input class="form-control" type="text" id="company" placeholder="Enter Company Name" name="company" />
+	        </div>
+            <div class="form-group">
+		        <label for="address">Address</label>
+		        <input class="form-control" type="text" id="address" placeholder="Enter The Address " name="address" />
+	        </div>
+            <div class="form-group">
+		        <label for="comment">Comment</label>
+		        <input class="form-control" type="text" id="comment" placeholder="Give Feedback " name="feedback" />
+	        </div>
+	        <div class="form-group">
+		        <label for="gender">Gender</label>              
+		        <div class="form-check">
+		            <input class="form-check-input" type="radio" name="gender" id="gender1" value="male">
+		            <label class="form-check-label" for="gender1">
+		              Male
+		            </label>
+		        </div>               
+		        <div class="form-check">
+		            <input class="form-check-input" type="radio" name="gender" id="gender2" value="female">
+		            <label class="form-check-label" for="gender2">
+		                Female
+		            </label>
+		        </div>
+	        </div>
+	        <div class="form-group">               
+		        <label >Course</label>             
+		        <div class="form-check">
+		            <input class="form-check-input" type="checkbox" name="course1" id="course1" value="dotnet">
+		            <label class="form-check-label" for="course1">
+		                Dot Net
+		            </label>
+		        </div>
+		        <div class="form-check">
+		            <input class="form-check-input" type="checkbox" name="course2" id="course2" value="java">
+		            <label class="form-check-label" for="course2">
+		                Java
+		            </label>
+		        </div>
+	        </div>	
+	        <div class="form-group">                
+	            <button class="btn btn-primary" type=button onclick="display();"> submit </button>
+	        </div>	
+        </div>        
+	</form>	
+    <div class="container">
+        <h5>User Details </h5>
+	        <div class="row">
+		        <div class="col">
+		            First Name : <span id="fn"></span>
+		        </div>
+	        </div>
+	        <div class="row">
+		        <div class="col">
+		            Last Name : <span id="ln"></span>
+		        </div>
+	        </div>
+	        <div class="row">
+		        <div class="col">
+		            Gender : <span id="gen"></span>
+		        </div>
+	        </div>
+	        <div class="row">
+		        <div class="col">
+		            Course : <span id="cou"></span>
+		        </div>
+	        </div>	
+	    </div>
+    </div>
+
+    <script language="javascript">
+        function display()
+        {
+
+            var fname=document.getElementById("firstname").value;
+            var lname=document.getElementById("lastname").value;
+            var bdate=document.getElementById("birthdate").value;
+            var email=document.getElementById("email").value;
+            var phoneno=document.getElementById("phoneno").value;
+            var company=document.getElementById("company").value;
+            var address=document.getElementById("address").value;
+            var comment=document.getElementById("comment").value;
+            
+ 
+            document.getElementById("fn").innerHTML=fname;
+            document.getElementById("ln").innerHTML=lname;
+            document.getElementById("bd").innerHTML=bdate;
+            document.getElementById("em").innerHTML=email;
+            document.getElementById("pho").innerHTML=phoneno;
+            document.getElementById("comp").innerHTML=company;
+            document.getElementById("add").innerHTML=address;
+            document.getElementById("com").innerHTML=comment;
+
+ 
+            var ele=document.getElementsByName("gender");
+
+ 
+            for (i = 0; i < ele.length; i++) 
+
+            {
+                if (ele[i].checked)              
+                document.getElementById("gen").innerHTML =  ele[i].value;
+            }
+            var c1=document.getElementById("course1").checked;
+            var co="";
+
+            if(c1 == true)
+            {
+                co = " Dotnet" ;
+            }
+
+            var c2=document.getElementById("course2").checked;
+
+            if(c2 == true)
+            {
+                co += " Java" ;
+            }
+
+            document.getElementById("cou").innerHTML=co;
+ 
+        }
+</script>
+
+</html>
