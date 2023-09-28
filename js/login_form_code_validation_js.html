@@ -1,0 +1,55 @@
+<html>
+    <form name="f1">
+
+        Enter Login Details: <br><br>
+        Username: <input type=text id="t1"/>
+        <span id="u1" style="color:crimson;">*</span><br><br>
+        Password:<input type=password id="t2"/>
+        <span id="u2" style="color:crimson;">*</span><br><br>
+        <button type=button onclick="check();">Ok</button>
+        <div id="res">--</div>
+
+    </form>
+    <script lang="javascript">
+        function check()
+        {
+            var u=document.getElementById("t1").value;
+            var p=document.getElementById("t2").value;
+
+            if (u=="" && p=="")
+            {
+                document.getElementById("u1").innerHTML="Please Enter Username";
+                document.getElementById("u2").innerHTML="Please Enter Password";
+            }
+
+            else if (u=="")
+            {
+                document.getElementById("u1").innerHTML="Please Enter Username";
+                document.getElementById("u2").innerHTML="";
+            }
+
+            else if (p=="")
+            {
+                document.getElementById("u2").innerHTML="Please Enter Password";
+                document.getElementById("u1").innerHTML="";
+            }
+
+            else
+            {
+                document.getElementById("u1").innerHTML="";
+                document.getElementById("u1").innerHTML="";
+            }
+
+            if (u=="admin"&& p=="admin")
+            {
+                document.getElementById("res").innerHTML="Login Successfull";
+            }
+
+            else
+            {
+                document.getElementById("res").innerHTML="Invalid Credentials ! ";
+
+            }
+        }
+    </script>
+</html>
