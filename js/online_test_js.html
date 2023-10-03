@@ -1,0 +1,51 @@
+<html>
+    <title>Onlien Test</title>
+    <body>
+        <div class="jumbotron text-center">
+            <b style="font-size: 30px;">Score Form:</b>
+        </div>
+        <div class="container">
+            <form>
+                <div>
+                    <p>1. What is the capital of India ?</p>
+                    <input type="radio" name="capital" value="delhi">Delhi
+                    <input type="radio" name="capital" value="mumbai">Mumbai
+                    <br><br>
+                    <p>2. What is the capital of Maharashtra ?</p>
+                    <input type="radio" name="capital" value="nagpur">Nagpur
+                    <input type="radio" name="capital" value="mumbai">Mumbai
+                    <br><br>
+                    <p>3. What is the capital of MP ?</p>
+                    <input type="radio" name="capital" value="bhopal">Bhopal
+                    <input type="radio" name="capital" value="nagpur">Nagpur
+                    <br><br>
+                    <button class="btn btn-primary" type="button" onclick="check();">Submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script lang="javascript">
+        function check()
+        {
+            var total=0;
+            var res1;
+            var ans=document.getElementsByName("capital");
+            for(i==0;i<ans.length;i++)
+            {
+                if(ans[i].checked)
+                {
+                    res1=ans[i].value;
+                   for (let index = 0; index < array.length; index++) {
+                    const element = array[index];
+                     alert(res1);
+                   }
+                }
+            }
+            if (res1=="delhi")
+            {
+                total=total+1;
+            }
+            alert("total marks out of 3: "+ total);
+        }
+    </script>
+</html>
