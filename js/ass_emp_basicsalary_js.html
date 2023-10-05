@@ -1,0 +1,66 @@
+<html>
+    <script lang="javascript">
+        function ok()
+        {
+            var name=document.getElementById("empname").value;
+            document.getElementById("ename").innerHTML="Employee Name: " + name;
+    
+            var sal=parseFloat(document.getElementById("salary").value);
+            document.getElementById("esal").innerHTML="Employee Salary: " + sal;
+    
+            var dsg=document.getElementById("designation").value;
+    
+            if(dsg == "m" )
+            {
+                var bonus=5000;
+                var total = sal + bonus;
+                document.getElementById("desi").innerHTML="Designation: Manager ";
+                document.getElementById("bns").innerHTML="Bonus: " + bonus;
+                document.getElementById("ttl").innerHTML="Total Salary: " + total;
+            }  
+            
+            else if(dsg == "c" )
+            {
+                var bonus=2000;
+                var total = sal + bonus;
+                document.getElementById("desi").innerHTML="Designation: Clerk ";
+                document.getElementById("bns").innerHTML="Bonus: " + bonus;
+                document.getElementById("ttl").innerHTML="Total Salary: " + total;
+            }  
+    
+            else if(dsg == "p" )
+            {
+                var bonus=1000;
+                var total = sal + bonus;
+                document.getElementById("desi").innerHTML="Designation: Peon ";
+                document.getElementById("bns").innerHTML="Bonus: " + bonus;
+                document.getElementById("ttl").innerHTML="Total Salary: " + total;
+            }  
+    
+        }
+    
+    </script>
+    <body>
+        <h2>Accept employee name and basic salary and designation then calculate.</h2><hr><br>
+    
+        <form>
+    
+            Enter employee Name: <input type="text" name="empname" id="empname"><br><br>
+            Enter Salary : <input type="text" name="salary" id="salary"><br><br>
+            Enter designation (m, c, p): <input type="text" name="designation" id="designation"><br><br>
+    
+            <button type="button" onclick="ok()">Submit</button><br><br>
+            <span id="ename"></span><br>
+            <span id="esal"></span><br>
+            <span id="desi"></span><br>
+            <span id="bns"></span><br>
+            <span id="ttl"></span><br>
+    
+        </form>
+    </body>
+</html>
+
+
+
+
+

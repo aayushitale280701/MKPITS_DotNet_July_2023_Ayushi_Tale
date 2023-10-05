@@ -1,0 +1,37 @@
+<html>
+    <body>
+        Enter Emp Name: <input type=text id="t1" /> <br><br>
+        Enter Basic Salary: <input type=text id="t2" /> <br><br>
+        Enter Designation: <input type=text id="t3" /> <br><br>
+
+        <button onclick="cal()" >result </button><br>
+        total : <span id="tot" ></span><br>
+        percentage : <span id="per" > </span><br>
+        grade : <span id="gr" ></span><br>
+    </body>   
+    <script lang="javascript">
+
+
+        function cal()
+        {
+            var s1=parseInt(document.getElementById("t1").value);
+	        var s2=parseInt(document.getElementById("t2").value);
+	        var s3=parseInt(document.getElementById("t3").value);
+	        var total=s1+s2+s3;
+
+	        document.getElementById("tot").innerText=total;
+	        var percentage=parseFloat(total / 300 ) * 100;
+	        document.getElementById("per").innerText=percentage;
+
+	        if(disignation == "manager" )
+		    {
+			    document.getElementById("gr").innerText= "distinction ";
+		    }
+	        else
+	        {
+		        document.getElementById("gr").innerText= "failed ";
+	        }
+        }    
+    </script>  
+
+</html>
