@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Salary Calculator</title>
+</head>
+<body>
+    <h1>Employee Salary Calculator</h1>
+    <form>
+        <label for="empName">Employee Name:</label>
+        <input type="text" id="empName" name="empName"><br><br>
+        <label for="basicSalary">Basic Salary:</label>
+        <input type="number" id="basicSalary" name="basicSalary"><br><br>
+        <label for="designation">Designation:</label>
+        <select id="designation" name="designation">
+            <option value="m">Manager</option>
+            <option value="p">Peon</option>
+            <option value="c">Clerk</option>
+        </select><br><br>
+        <input type="button" value="Calculate Salary" onclick="calculateSalary()">
+    </form>
+    <br>
+    <div id="result"></div>
+
+    <script>
+        function calculateSalary()
+        {
+            var empName = document.getElementById("empName").value;
+            var basicSalary = parseFloat(document.getElementById("basicSalary").value);
+            var designation = document.getElementById("designation").value;
+            var totalSalary = 0;
+
+            switch (designation)
+            {
+                case "m":
+                totalSalary = basicSalary + 5000; 
+                break;
+                case "c":
+                totalSalary = basicSalary +2000; 
+                break;
+                case "p":
+                totalSalary = basicSalary +1000; 
+                break;
+            }
+
+            var resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = "<h2>Total Salary for " + empName + ":</h2>" + totalSalary.toFixed(1);
+        }
+    </script>
+</body>
+</html>

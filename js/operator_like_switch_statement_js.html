@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function msg()
+            {
+                var num1, num2, result;
+                num1=parseFloat(document.f1.n1.value);
+                num2=parseFloat(document.f1.n1.value);
+                op=document.f1.op.value;
+                switch(op)
+                {
+                    case'+':
+                    result=num1+num2;
+                    break;
+                    case'-':
+                    result=num1-num2;
+                    break;
+                    case'*':
+                    result=num1*num2;
+                    break;
+                    case'/':
+                    result=num1/num2;
+                    break;
+                    default:
+                    alert("Invalid Operator");
+                    break;
+                }
+                document.getElementById("r1").innerHTML=result;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Operator like Switch statement</h1><br>
+        <center>
+            <form name="f1" style="width: 50%">
+            <fieldset>
+                <legend>Calculation</legend>
+                Enter number1<input type="text" name="n1"/>
+                <br><br>
+                Enter number2<input type="text" name="n2"/>
+                <br><br>
+                Enter Operator(+,-,*,/)<input type="text" name="op"/>
+                <br><br>
+                <input type="button" value="result" onclick="msg();"/>
+                <br><br>
+                result: <span id="r1" name="res"></span>
+            </fieldset>
+            </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script lang="javascript">
+        function msg()
+        {
+            var grade,result;
+            grade=document.f1.n1.value;
+            switch(grade)
+            {
+                case 'A':
+                result="A grade";
+                break;
+                case 'B':
+                result="B grade";
+                break;
+                case 'C':
+                result="C grade";
+                break;
+                default:
+                result="Invalid grade";
+                break;
+            }
+            document.getElementById("r1").innerHTML=result;
+        }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Switch function msg</h1><br>
+        <center>
+            <form name="f1" style="width: 50%">
+            <fieldset>
+                <legend>calculation</legend>
+                Enter grade<input type="text" name="n1"/>
+                <br><br>
+                <input type="button" value="result" onclick="msg();"/><br><br>
+                result: <span id="r1" name="res"></span>
+            </fieldset>
+        </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <script lang="javascript">
+        
+    </script>
+    <body>
+        Enter number1 <input type="text" id="t1"/><br><br>
+        Enter number1 <input type="text" id="t2"/><br><br>
+        Enter operator(+,-,*):<input type="text" id="t3"/><br>
+        <button onclick="cal()">Result</button><br>
+        Result: <span id="tot"></span><br>
+    </body>
+    <script>
+        function cal()
+        {
+            var s1=parseInt(document.getElementById("t1").value);
+            var s2=parseInt(document.getElementById("t2").value);
+            var op=document.getElementById("t3").value;
+            var result=0;
+            switch(op)
+            {
+                case'+':
+                result=s1+s2;
+                break;
+                case'-':
+                result=s1-s2;
+                break;
+                case'*':
+                result=s1*s2;
+                break;
+                default:
+                alert("invalid operator");
+                break;
+
+            }
+            document.getElementById("tot").innerText=result;
+        }
+    </script>
+</html>

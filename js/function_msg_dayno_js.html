@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script lang="javascript">
+        function msg()
+        {
+            var dayno,result;
+            dayno=parseInt(document.f1.n1.value);
+            switch(dayno)
+            {
+                case 1 :
+                result="Monday";
+                break;
+                case 2 :
+                result="Tuesday";
+                break;
+                case 3 :
+                result=" Wednesday";
+                break;
+                case 4 :
+                result="Thursday";
+                break;
+                case 5 :
+                result="Friday";
+                break;
+                case 6 :
+                result="Saturday";
+                break;
+                case 7 :
+                result="Sunday";
+                break;
+                default:
+                result="Invalid day no";
+                break;
+
+            }
+            document.getElementById("r1").innerHTML=result;
+        }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Switch function msg</h1><br>
+        <center>
+            <form name="f1" style="width: 50%">
+            <fieldset>
+                <legend>calculation</legend>
+                Enter day no<input type="text" name="n1"/>
+                <br><br>
+                <input type="button" value="result" onclick="msg();"/><br><br>
+                result: <span id="r1" name="res"></span>
+            </fieldset>
+            </form>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function msg()
+            {
+                var num1, num2, result;
+                num1=parseFloat(document.f1.n1.value);
+                num2=parseFloat(document.f1.n1.value);
+                op=document.f1.op.value;
+                switch(gr)
+                {
+                    var grade='B';  
+                    var result;  
+                    switch(grade)
+                    {  
+                        case 'A':  
+                        result+=" A Grade";  
+                        case 'B':  
+                        result+=" B Grade";  
+                        case 'C':  
+                        result+=" C Grade";  
+                        default:  
+                        result+=" No Grade";  
+                    }  
+                    document.write(result);  
+
+                }
+                    document.getElementById("r1").innerHTML=result;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Grade like Switch statement</h1><br>
+        <center>
+            <form name="f1" style="width: 50%">
+            <fieldset>
+                <legend>Calculation</legend>
+                
+                Enter Grade(A,B,C,D)<input type="text" value="result" onclick="msg();" name="grade"/>
+                <br><br>
+                <br><br>
+                result: <span id="r1" name="res"></span>
+            </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
