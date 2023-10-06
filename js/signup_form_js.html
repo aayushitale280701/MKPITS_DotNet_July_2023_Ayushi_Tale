@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function msg() 
+            {
+                var uname,pass,gender,h1,h2,ct;
+                var result;
+                uname=document.f1.n1.value;
+                pass=document.f1.n2.value;
+                gender=document.f1.r1.value;
+                h1=document.f1.c1.value;
+                h2=document.f1.c2.value;
+                ct=document.f1.city.value;
+                result = "User Details " + "<br>";
+                result += "Username  : " + uname +"<br>";
+                result += "Password  : " + pass +"<br>";
+                result += "Gender  : " + gender +"<br>";
+                result += "hobby  : " + h1 +"<br>";
+                result += "hobby  : " + h2 +"<br>";
+                result += "city  : " + ct +"<br>";
+                document.getElementById("r1").innerHTML=result;
+
+            }
+        </script>
+    </head>
+
+    <body>
+    <h1 align=center >SignUp Form</h1>
+    <hr>
+    <center>
+        <form name="f1" style="width:50%" >
+            <fieldset>
+                <legend>Signup Form</legend>
+                    Username <input type=text name="n1" /><span style="color:red;" id="u1">*</span>
+                    <br><br>
+                    Password <input type=password name="n2" /><span style="color:red;" id="u2">*</span>
+                    <br><br>
+                    gender <input type=radio name="r1" value="male" />Male
+                    <input type=radio name="r1" value="female" />Female
+
+                    <br><br>
+                    hobby <input type=checkbox name="c1" value="music" />Music
+                    <input type=checkbox name="c2" value="reading" />reading
+
+                    <br><br>
+                    city
+                    <select  name="city" />
+                        <option value="nagpur">nagpur</option>
+                        <option value="mumbai">mumbai</option>
+                    </select>
+                    <br><br>
+	                <input type=button value="sign up" onclick="msg();" />
+	                <br><br>
+	                <span id="r1" name="res" ></span>
+                </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
+

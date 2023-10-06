@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function msg()
+            {
+                var uname,pass;
+                uname=document.f1.n1.value;
+                if(uname == "")
+                {
+
+                    document.getElementById("u1").innerHTML="username cannot be blank";
+                }
+                else
+                {
+                    document.getElementById("u1").innerHTML="";
+	                if(pass == "")
+	                {
+		                document.getElementById("u2").innerHTML="password cannot be blank";
+	                }
+	                else
+	                {
+		                document.getElementById("u2").innerHTML="";
+		                if(uname == "admin" && pass=="admin") 
+		                {
+			                document.getElementById("r1").innerHTML="login successfull";
+		                }
+		                else
+		                {
+			                document.getElementById("r1").innerHTML="invalid credentials , try again";
+		                }
+	                }
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 align=center >Form Validation</h1>
+        <hr>
+        <center>
+            <form name="f1" style="width:50%" >
+                <fieldset>
+                    <legend>Sign in</legend>
+                    Username <input type=text name="n1" /><span style="color:red;" id="u1">*</span>
+                    <br><br>
+                    Password <input type=password name="n2" /><span style="color:red;" id="u2">*</span>
+
+                    <br><br>
+                   	<input type=button value="sign in" onclick="msg();" />
+                 	<br><br>
+	                status : <span id="r1" name="res" ></span>
+                </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
