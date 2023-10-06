@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function msg()
+            {
+                var num,result=1;
+                var r=0;
+                num=parseInt(document.f1.n1.value);
+                for(i=1; i<=10; i++)
+                {
+                    result=num*i;
+                    if(r==0)
+                    {
+                        r=num+"X" +i+"="+  result+"<br>";
+                    }
+                    else
+                    {
+                        r+= num+"X" +i+ "=" + result+"<br>";
+                    }
+                }
+                document.getElementById("r1").innerHTML=r;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Oprator using for loop</h1>
+        <hr>
+        <center>
+            <form name="f1" style="width: 50%">
+            <fieldset>
+                <legend>Oprator</legend>
+                Enter No: <input type="text" name="n1"/>
+                <br><br>
+                <input type="button" value="result" onclick="msg();"/>
+                <br><br>
+                Result: 
+                <br>
+                <span id="r1" name="res"></span>
+            </fieldset>
+            </form>
+        </center>
+    </body>
+</html>

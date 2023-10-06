@@ -1,0 +1,25 @@
+<html>
+    <script lang="javascript">
+        function display()
+        {
+            var i=1, no, fact;
+            fact=1;
+            no=Number(document.getElementById("num").value);
+            do
+            {
+                fact= fact*i;
+                i++;
+            }
+            while(i<=no);
+            {
+                document.getElementById("answer").value=fact;
+            }
+        }
+    </script>
+
+    <body class="button">
+        Enter Num: <input id="num" ><br><br>
+        <button class="button" onclick="display();">Factorial</button>
+        <input id="answer">
+    </body>
+</html>

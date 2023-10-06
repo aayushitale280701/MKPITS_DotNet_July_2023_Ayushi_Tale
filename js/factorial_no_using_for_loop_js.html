@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function msg()
+            {
+                var num,fact=1;
+                num=parseInt(document.f1.n1.value);
+
+                for(i=num;i>0;i--)
+                {
+                    fact=fact * i;
+                }
+
+                document.getElementById("r1").innerHTML=fact;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 align=center >Factorial of a number </h1>
+        <hr>
+        <center>
+            <form name="f1" style="width:50%" >
+                <fieldset>
+                    <legend>calculation </legend>
+                    enter no <input type=text name="n1" />
+                    <br><br>
+
+	                <input type=button value="result" onclick="msg();" />
+	                <br><br>
+	                result  : <span id="r1" name="res" ></span>
+                </fieldset>
+            </form>
+        </center>
+    </body>
+</html>

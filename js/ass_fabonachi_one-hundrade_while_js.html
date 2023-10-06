@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script lang="javascript">
+            var number= parseInt(prompt('Enter a Number'));
+            var n1=0, n2=1, result;
+
+            document.write('Fibonacci Series:');
+
+            document.write(n1);
+
+            document.write(n2);
+            
+            result = n1+n2; 
+
+            while(result <= number)
+            {
+                document.write(result+ "<br>");
+                n1=n2;
+                n2=result;
+                result=n1+n2; 
+            }
+        </script>
+    </head>
+    
+    
+</html>
