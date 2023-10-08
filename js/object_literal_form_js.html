@@ -1,0 +1,36 @@
+<html>
+    <script lang="javascript">
+        let emptyObject = {};
+        let person = 
+        {
+            firstName: 'John',
+            lastName: 'Doe'
+        };
+        let contact = 
+        {
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'john.doe@example.com',
+            phone: '(408)-555-9999',
+            address: 
+            {
+                building: '4000',
+                street: 'North 1st street',
+                city: 'San Jose',
+                state: 'CA',
+                country: 'USA'
+            }
+        }
+        alert(contact.firstName);
+        alert(contact.lastName);
+        alert(contact.address.country);  
+        alert(contact.age); 
+        alert(contact['phone']); 
+        alert(contact['email']);
+
+        const click = Symbol('click');
+    </script>
+    <body>
+        <h1>Defines an empty object using the object literal form.</h1>
+    </body>
+</html>

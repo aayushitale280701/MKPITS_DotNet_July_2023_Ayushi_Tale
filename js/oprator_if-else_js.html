@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function msg() 
+            {
+                var num1,num2,result;
+                num1=parseFloat(document.f1.n1.value);//parseInt function is used to convert string into integer
+                num2=parseFloat(document.f1.n2.value);
+                op=document.f1.op.value;
+
+                if(op=='+') 
+                {
+                    result=num1+num2;
+                }
+                else if(op=='-') 
+                {
+                    result=num1-num2;
+                }
+                else if(op=='*') 
+                {
+                    result=num1*num2;
+                }
+                else
+                {
+                    alert("invalid opertor");
+                }
+                document.getElementById("r1").innerHTML=result;
+
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 align=center >mkpits solution</h1>
+        <hr>
+        <center>
+            <form name="f1" style="width:50%" >
+                <fieldset>
+                    <legend>calculation </legend>
+                    enter number1 <input type=text name="n1" />
+                    <br><br>
+                    enter number2 <input type=text name="n2" />
+                    <br><br>
+                    enter operator (+,-,*) <input type=text name="op" />
+                    <br><br>
+	                <input type=button value="result" onclick="msg();" />
+	                <br><br>
+	                result  : <span id="r1" name="res" ></span>
+                </fieldset>
+            </form>
+        </center>
+    </body>
+</html>
