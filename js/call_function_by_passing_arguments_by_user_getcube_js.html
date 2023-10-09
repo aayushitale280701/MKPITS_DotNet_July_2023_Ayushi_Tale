@@ -1,0 +1,14 @@
+<html>
+    <script lang="Javascript">
+        function getcube(number)
+        {
+            alert(number*number*number);
+        }
+    </script>
+    <body>
+        <form name="f1">
+            Enter Number: <input type="text" name="t1"/><br><br>
+            <input type="button" value="call function" onclick="getcube(document.f1.t1.value)"/>
+        </form>
+    </body>
+</html>
