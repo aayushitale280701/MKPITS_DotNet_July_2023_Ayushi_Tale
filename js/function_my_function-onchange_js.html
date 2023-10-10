@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function myFunction()
+        {
+            var x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+            alter("first name" +x.value);
+            document.getElementById("res").innerHTML=x.value;
+        }
+    </script>
+    <body>
+        First Name:- <input id="fname" type="text" onchange="myFunction();"/><br><br>
+        Last Name:- <input id="lname" type="text"/><br><br>
+        <span id="res"></span>
+    </body>
+</html>

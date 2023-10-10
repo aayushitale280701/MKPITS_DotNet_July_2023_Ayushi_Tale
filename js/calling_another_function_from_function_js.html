@@ -1,0 +1,23 @@
+<html>
+    <script>
+        function gettotal(m1,m2,m3)
+        {
+            var total=parseInt(m1)+parseInt(m2)+parseInt(m3);
+            return total;
+        }
+        function getper(total)
+        {
+            var per=(total/300.0)*100.0;
+            return per;
+        }
+        var t=gettotal(80,90,100);
+        alert("total :- " + t);
+        var p=getper(t);
+        alert("per :- "+p);
+    </script>
+    <body>
+        <h1>
+            Calling another function form function.
+        </h1>
+    </body>
+</html>

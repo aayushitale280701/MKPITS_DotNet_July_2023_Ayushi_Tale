@@ -1,0 +1,33 @@
+<html>
+    <script>
+        function gettotal(m1,m2,m3)
+        {
+            var total=parseInt(m1)+parseInt(m2)+parseInt(m3);
+            return total;
+        }
+        function getper(total)
+        {
+            var per=(total/300.0)*100.0;
+            return per;
+        }
+        function getresult(m1,m2,m3)
+        {
+            var total=gettotal(m1,m2,m3);
+            document.getElementById("t").innerHTML=total;
+
+            var percentage=getper(total);
+            document.getElementById("p").innerHTML=percentage;
+        }
+    </script>
+    <body>
+        <form name="f1">
+            Enter Marks1 :- <input type="text" name="t1"/><br><br>
+            Enter Marks2 :- <input type="text" name="t2"/><br><br>
+            Enter Marks3 :- <input type="text" name="t3"/><br><br>
+            <input type="button" value="click" onclick="getresult(document.f1.t1.value,document.f1.t2.value,document.f1.t3.value)"/>
+            <br><br>
+            <span id="t">Total:- </span><br><br>
+            <span id="p">percentage:- </span><br><br>
+        </form>
+    </body>
+</html>
