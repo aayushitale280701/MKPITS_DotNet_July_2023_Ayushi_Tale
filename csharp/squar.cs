@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 namespace squarprogram
     {
        class program
@@ -15,3 +15,4 @@ namespace squarprogram
 }
 
     }
+

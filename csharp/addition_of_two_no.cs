@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 namespace additionprogram
 {
     class program
@@ -15,3 +15,4 @@ namespace additionprogram
             Console.ReadKey();
         }
     }
+}
