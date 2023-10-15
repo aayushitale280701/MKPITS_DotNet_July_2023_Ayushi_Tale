@@ -6,13 +6,23 @@ namespace vawel
         public static void Main(string[] args)
         {
             char ch;
-            Console.WriteLine("Enter a charecter");
-            ch=Convert.ToChar(Console.ReadLine());
+           
+            Console.Write("Enter an Alphabet (A-Z or a-z) : ");
+            ch = Convert.ToChar(Console.ReadLine().ToLower());
 
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
-                Console.WriteLine("charecter are vowal");
+            int i = ch;
+            if (i >= 48 && i <= 57)
+            {
+                Console.Write("You entered a number, Please enter an alpahbet.");
+            }
+            else if (ch=='a'|| ch=='i'|| ch=='o' ||ch=='e' ||ch=='u')
+            {
+                Console.WriteLine("The Alphabet is vowel");
+            }
             else
-                Console.WriteLine("character are not volwe");
+            {
+                Console.WriteLine("The Alphabet is not vowel");
+            }
         }
     }
 }
