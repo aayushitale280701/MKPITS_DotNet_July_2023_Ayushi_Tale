@@ -1,19 +1,22 @@
 ﻿using System;
-namespace multiplicationthreenumbers
+namespace fournoaverage
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            int num1 =2;
-            int num2 =3;
-            int num3 =6;
-            float mul;
+            int num1,num2,num3,num4,Total;
+            Console.WriteLine("Enter the num1");
+            num1=Convert.ToInt32(console.ReadLine());
+            Console.WriteLine("Enter the num2");
+            num2 = Convert.ToInt32(console.ReadLine());
+            Console.WriteLine("Enter the num3");
+            num3 = Convert.ToInt32(console.ReadLine());
+            Console.WriteLine("Enter the num4");
+            num4 = Convert.ToInt32(console.ReadLine());
 
-
-            mul = num1 * num2 * num3;
-            Console.WriteLine("result 2*3*6=" + mul);
-            Console.WriteLine("Result  " + mul);
+            Total=(num1+num2+num3+num4)/(4) ;
+            console.WriteLine("Total Average : " + total);
             Console.ReadLine();
         }
     }
