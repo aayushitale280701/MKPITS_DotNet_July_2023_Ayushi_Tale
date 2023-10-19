@@ -1,28 +1,28 @@
 ﻿using System;
-namespace tablennum
+namespace primeno
 {
     public class program
     {
         public static void Main(string[] args)
         {
-            int num;
-            
-            int counter = 1;
-            int counter1 = 1;
-
-            Console.WriteLine("Enter the no.");
-            num = Convert.ToInt32(Console.ReadLine());
-
-            for (counter=1; counter <= 10; counter++)
+            console.WriteLine("Prime no:");
+            int num, counter, flag = 0;
+            for(num=3; num<=20; num++)
             {
-                for (counter1=1; counter1 <= num; counter1++)
+                flag = 0;
+                counter = 2;
+                for(counter=2; counter < num; counter++)
                 {
-                    
-                    Console.Write("{0} * {1} = {2}",counter1,  counter,(counter1*counter));
-                    Console.Write("\t");
-
+                    if(num % 2 == 0)
+                    {
+                        flag = 1;
+                        break;
+                    }
                 }
-                Console.WriteLine();
+                if(flag==0)
+                {
+                    Console.Write("Prime No:" + num);
+                }
             }
             Console.ReadKey();
         }
