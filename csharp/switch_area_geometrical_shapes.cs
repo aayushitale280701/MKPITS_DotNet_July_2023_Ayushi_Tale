@@ -10,8 +10,7 @@ namespace switchareageometricalshapes
 
             Console.WriteLine("Enter no between 1 to 3");
             no=Convert.ToInt32(Console.ReadLine());
-
-
+            Console.ReadKey();
         }
     }
 }
