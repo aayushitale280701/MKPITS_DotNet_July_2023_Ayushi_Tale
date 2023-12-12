@@ -1,0 +1,12 @@
+Create table Student_MKPITS (Roll_No int, Student_Name varchar(20), Student_Address varchar(50), Mobile_No int)
+Insert into Student_MKPITS  values (101, 'Ayushi','Dattha wadi',8805)
+Insert into Student_MKPITS values (102, 'Pooja', 'Chandan Nager', 7715)
+Insert into Student_MKPITS values (103, 'Ritu', 'Kamthi',5501)
+Insert into Student_MKPITS values (104, 'Krina' , 'Kamal square',7419)
+Insert into Student_MKPITS values (105, 'Chanrdima', 'Ram nager',9813)
+Insert into Student_MKPITS  values (106, 'Priya','Dattha wadi',8825)
+Insert into Student_MKPITS values (107, 'Vrushali', 'Tukdoji square', 7766)
+Insert into Student_MKPITS values (108, 'Mayuri', 'Medical square',7321)
+Insert into Student_MKPITS values (109, 'Prachi' , 'Nandanvan',7419)
+Insert into Student_MKPITS values (1010, 'Sayli', 'Nandanvan',6213)
+Select * from Student_MKPITS

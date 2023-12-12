@@ -1,0 +1,12 @@
+Create table Customers(CustID int, CustName varchar(20), CustAddress varchar(50))
+Insert into Customers values (11,'Ayushi', 'Murtizapur')
+Insert into Customers values (12,'Om', 'Akola')
+Insert into Customers values (13,'Ritu', 'Babhandara')
+Insert into Customers values (14,'Rajesh', 'Mizapur')
+Insert into Customers values (15,'Avinash','Amravati')
+Insert into Customers values (16,'Ayush', 'Yavatmal')
+Insert into Customers values (17,'Om', 'Nagpur')
+Insert into Customers values (18,'Khuishi', 'Wardha')
+Insert into Customers values (19,'Pooja', 'Arwi')
+Insert into Customers values (20,'Aayuni','Amravati')
+Select * from Customers

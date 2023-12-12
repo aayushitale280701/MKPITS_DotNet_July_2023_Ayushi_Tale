@@ -1,0 +1,12 @@
+Create table UserData (UserID int, UserName varchar(20), Password1 varchar(50), EmailID varchar(50), Gender varchar(20), City varchar(20),Country varchar(50))
+Insert into UserData values (11, 'Ayushi', 'ayu123', 'Ayushi123@gmail.com', 'Female', 'Murtizapur', 'India')
+Insert into UserData values (12, 'Om', 'om112', 'om456@gmail.com', 'Male', 'Murtizapur', 'India')
+Insert into UserData values (13, 'Rajesh', 'raju23', 'rajesh@gmail.com', 'Male', 'Akola', 'India')
+Insert into UserData values (14, 'Ritu', 'ritu145', 'ritu@234gamil.com', 'Female', 'Nagpur', 'India')
+Insert into UserData values (15, 'Khushi', 'Khushi456', 'khushi234@gmail.com', 'Female', 'Nagpur', 'India')
+Insert into UserData values (16, 'Ayush', 'ayush123', 'Ayush123@gmail.com', 'Male', 'Mizapur', 'India')
+Insert into UserData values (17, 'Omee', 'omee112', 'omee456@gmail.com', 'Female', 'Mumbai', 'India')
+Insert into UserData values (18, 'Raju', 'raju23', 'rajesh@gmail.com', 'Male', 'Akola', 'India')
+Insert into UserData values (19, 'Chanda', 'ritu145', 'ritu@234gamil.com', 'Female', 'Wardha', 'India')
+Insert into UserData values (20, 'Avinash', 'avinash4156', 'avinash234@gmail.com', 'Male', 'Nagpur', 'India')
+Select * from UserData
