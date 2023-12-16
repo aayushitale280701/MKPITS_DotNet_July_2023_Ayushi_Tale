@@ -1,4 +1,3 @@
-
 -----Orders----
 
 Create table Orders (OrderID int PRIMARY KEY, 
@@ -28,5 +27,9 @@ insert into Orders_Detailes values (3,'Mobile',6)
 select * from Orders_Detailes
 
 delete from Orders_Detailes where OrderID=1
-insert into Orders_Detailes values(2,'2022-09-07',2)
+insert into Orders_Detailes values(2,'CPU',2)
 select * from Orders_Detailes
+
+delete from Orders where OrderID=1
+insert into Orders values(4,'2022-09-07',4)
+select * from Orders
