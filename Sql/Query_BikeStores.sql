@@ -54,25 +54,25 @@ insert into Brande1 values(153,'Heller')
 insert into Brande1 values(154,'Mahindra')
 SELECT * FROM Brande1
 
-CREATE TABLE Products111 (product_id INT PRIMARY KEY,
+CREATE TABLE Products222 (product_id INT PRIMARY KEY,
 	                   product_name VARCHAR (255) NOT NULL,
 	                   brand_id INT NOT NULL,
 	                   category_id INT NOT NULL,
 	                   model_year INT NOT NULL,
-	                   list_price DECIMAL NOT NULL,
+	                   list_price DECIMAL NOT NULL,constraint fk123
 	                   FOREIGN KEY (category_id) 
-                       REFERENCES Categories3 (category_id) 
-                       ON DELETE CASCADE ON UPDATE CASCADE,
+                       REFERENCES Categories3 (category_id), 
+                       constraint fk124
 	                   FOREIGN KEY (brand_id) 
                        REFERENCES Brande1 (brand_id) 
-                       ON DELETE CASCADE ON UPDATE CASCADE
+                  
                       );
 
-insert into Products111 values (1,'Electic oil',151,141,2022,1000)
-insert into Products111 values (2,'Front Wheel',152,142,2020,2000)
-insert into Products111 values (3,'Number Plate',153,143,2023,900)
-insert into Products111 values (4,'Back Wheel',154,144,2022,1000)
-SELECT * FROM Products111
+insert into Products222 values (1,'Electic oil',151,141,2022,1000)
+insert into Products222 values (2,'Front Wheel',152,142,2020,2000)
+insert into Products222 values (3,'Number Plate',153,143,2023,900)
+insert into Products222 values (4,'Back Wheel',154,144,2022,1000)
+SELECT * FROM Products222
 
 CREATE TABLE Sales_customers1 (customer_id INT IDENTITY PRIMARY KEY,
 	                          first_name VARCHAR (255) NOT NULL,
