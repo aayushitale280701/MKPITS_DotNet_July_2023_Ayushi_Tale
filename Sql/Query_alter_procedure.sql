@@ -104,3 +104,13 @@ exec prod12 120,200,'Wheel'
 exec prod12 120,200,'oil'
 exec prod12 @minp=100,@pn='e'
 
+-----------insert query-------------------- 
+create proc sp_inprod11
+as 
+begin
+insert into Products221 values(5,'Mirror',155,145,2020,1500);
+end
+
+exec sp_inprod11
+select * from Products221
+
