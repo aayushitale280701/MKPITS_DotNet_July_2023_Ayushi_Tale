@@ -1,0 +1,12 @@
+CREATE TABLE STUDENT (RNO INT, 
+                      NAME VARCHAR(30), 
+                      CLASS VARCHAR(30), 
+                      SECTION VARCHAR(1), 
+                      MOBILE VARCHAR(10),
+                      PRIMARY KEY (RNO, MOBILE)
+					  );
+
+INSERT INTO STUDENT VALUES (11,'AYUSHI','DOTNET','D','123456789')
+INSERT INTO STUDENT VALUES (11,'AYUSHI','DOTNET','D','123456789')
+
+SELECT * FROM STUDENT
