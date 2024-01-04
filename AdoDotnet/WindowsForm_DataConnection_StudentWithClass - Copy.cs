@@ -138,8 +138,6 @@ namespace WindowsForm_DataConnection_StudentWithClass
     {
         string srtcon = "server = LAPTOP-SUPR1U1K\\SQLEXPRESS; integrated security=true; database=MkpSample";
 
-        public object Hobby { get; private set; }
-
         //creating a method to insert record in student table
 
         public string InsertStudents(int Rno, string StudentName, string Gender, string Hobby, string City, string Dob)
@@ -185,7 +183,7 @@ namespace WindowsForm_DataConnection_StudentWithClass
         }
 
         //method to delete record from student table
-        //method to update record
+       
 
         public string DeleteStudent(int Rno, string StudentName)
         {
