@@ -1,23 +1,25 @@
-create table TableNation (NationID int primary key,
+create table TableNation1 (NationID int primary key,
                           NationName varchar(500)
 						  )
-insert into TableNation values (11,'India')	
-insert into TableNation values (12,'USA')
-insert into TableNation values (13,'London')
-insert into TableNation values (14,'ShreLanka')
-insert into TableNation values (15,'Africa')
+insert into TableNation1 values (1,'India')	
+insert into TableNation1 values (2,'United_Nation')
+insert into TableNation1 values (3,'Nepal')
+insert into TableNation1 values (4,'Srilanka')
 
 
 create table TableState (StateID int primary key ,
                          NationID int constraint fk1 foreign key (NationID)
-						 references TableNation (NationID),
+						 references TableNation1 (NationID),
 						 StateName varchar (500)
 						 );
-insert into TableState values (101,11,'Maharashtra'),
-                              (102,12,'J&K'),
-							  (103,13,'UP'),
-							  (104,14,'MP'),
-							  (105,15,'Panjab')
+insert into TableState values (101,1,'Andhra Pradesh'),
+                              (102,1,'Punjab'),
+							  (103,2,'California'),
+							  (104,2,'Florida'),
+							  (105,3,'Koshi'),
+							  (106,3,'Bagmati'),
+							  (107,4,'Colombo'),
+							  (108,4,'Ratnapura')
 
 
 create table TableCity (CityID int primary key,
@@ -25,11 +27,32 @@ create table TableCity (CityID int primary key,
 						references TableState (StateID),
 						CityName varchar (500)
 						)
-insert into TableCity values (1101,101,'Mumbai'),
-                             (1102,102,'Lehdakh'),
-							 (1103,103,'Bhopal'),
-							 (1104,104,'Indor'),
-							 (1105,105,'Chadighar')
+insert into TableCity values (1001,101,'Visakhapatnam'),
+                             (1002,101,'Vijayawada'),
+							 (1003,101,'Guntur'),
+							 (1004,102,'Amritsar'),
+							 (1005,102,'Jalandhar'),
+							 (1006,102,'Chandighar'),
+							 (1007,103,'Los Angeles'),
+							 (1008,103,'San Jose'),
+							 (1009,103,'San Diego'),
+							 (1010,104,'Jacksonville'),
+							 (1011,104,'Miami'),
+							 (1012,104,'Tampa'),
+							 (1013,105,'Damak'),
+							 (1014,105,'Dharan'),
+							 (1015,105,'Biratnagar'),
+							 (1016,106,'Banepa'),
+							 (1017,106,'Bharatpur'),
+							 (1018,106,'Hetauda'),
+							 (1019,107,'Grandpass'),
+							 (1020,107,'Borella'),
+							 (1021,107,'Pettah'),
+							 (1022,108,'Balangoda'),
+							 (1023,108,'Kolonna'),
+							 (1024,108,'Panamure')
+							 
+
 
 create table TableCourseRegDetail(CourseRegID int primary key,
                                   CategoryID int,
